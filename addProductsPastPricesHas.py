@@ -22,7 +22,7 @@ for i in range(len(ab)):
     price = ab['price'][i].replace(',','.')
     specialNote = 1 if (producer in ['ΑΒ','ΑΒ ΒΙΟ','ΑΒ ΕΠΙΛΟΓΗ','ΑΒ FRESH TO GO'])  else 0
     sqlFormula = """INSERT INTO product (barcode, product_name, producer_name, price, special_note, category) 
-                    VALUES ('{}','{}','{}','{}','{}','{}')""".format(barcode,name,producer,price,specialNote,category)
+                    VALUES ('{}','{}','{}','{}',b'{}','{}')""".format(barcode,name,producer,price,specialNote,category)
     mycursor.execute(sqlFormula)
     mydb.commit()
     for j in range(np.random.choice(range(1,10))):

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Car Rental Company</h1>
+<p>Our iventory of cars:</p>
+<table>
+<tr><th>Manufacturer</th><th>Model</th><th>Type</th><th>Cylinder Capacity</th><th>HP</th><th>Fuel Type</th><th>Year</th><th>Km</th></tr>
+{% for album in albums %}
+<tr><td>{{album[0]}}</td><td>{{album[1]}}</td><td>{{album[2]}}</td><td>{{album[3]}}</td><td>{{album[4]}}</td><td>{{album[5]}}</td><td>{{album[6]}}</td><td>{{album[7]}}</td></tr>
+{% endfor %}
+</table>
+
+  
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Car Rental Company</h1>
+<p>Available of the selected Category and Make:</p>
+<table>
+<tr><th>Make</th><th>Model</th><th>Horse Power</th><th>Engine Capacity</th><th>Year</th></tr>
+{% for album in albums %}
+<tr><td>{{album[0]}}</td><td>{{album[1]}}</td><td>{{album[2]}}</td><td>{{album[3]}}<td>{{album[4]}}</td></tr>
+{% endfor %}
+</table>
+
+  
+{% endblock %}

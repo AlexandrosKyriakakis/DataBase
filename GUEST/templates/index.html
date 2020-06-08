@@ -1,0 +1,66 @@
+{% extends "layout.html" %} {% block content %}
+<script src="/static/js/search.js"></script>
+<form class="form-inline" action="/action_page.php">
+  <label for="store">Store:</label>
+  <select
+    type="text"
+    name="store"
+    placeholder="0"
+    value=""
+    id="store"
+    onchange="myFunction()"
+  >
+    <option value="" selected>All Stores</option>
+    <option value="1">store 1</option>
+    <option value="2">store 2</option>
+    <option value="3">store 3</option>
+    <option value="4">store 4</option>
+    <option value="5">store 5</option>
+    <option value="6">store 6</option>
+    <option value="7">store 7</option>
+    <option value="8">store 8</option>
+    <option value="9">store 9</option>
+    <option value="10">store 10</option>
+  </select>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday" onchange="myFunction()" />
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" onchange="myFunction()" />
+  <label for="barcode">Barcode:</label>
+  <input type="text" id="barcode" onchange="myFunction()" />
+  <label for="total">Total amount:</label>
+  <input type="text" id="total" onchange="myFunction()" />
+  <label for="card_or_cash">Payment Method:</label>
+  <select
+    type="text"
+    name="card_or_cash"
+    placeholder="cash_or_card"
+    value=""
+    id="card_or_cash"
+    onchange="myFunction()"
+  >
+    <option value="" selected>Cash or Card</option>
+    <option value="Card">Card</option>
+    <option value="Cash">Cash</option>
+  </select>
+  <label for="card_or_cash">Category:</label>
+  <select
+    type="text"
+    name="category"
+    placeholder="0"
+    value=""
+    id="category"
+    onchange="myFunction()"
+  >
+    <option value="" selected>All Categories</option>
+    <option value="Κάβα">Κάβα</option>
+    <option value="category 2">category 2</option>
+    <option value="category 3">category 3</option>
+    <option value="category 4">category 4</option>
+    <option value="category 5">category 5</option>
+    <option value="category 6">category 6</option>
+  </select>
+</form>
+<div id="demo"></div>
+
+{% endblock %}

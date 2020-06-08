@@ -49,7 +49,7 @@ CREATE TABLE product(
 				product_name VARCHAR(101) NOT NULL, /* Added name*/
 				producer_name VARCHAR(50) NOT NULL, /* Added producer name*/
                 price FLOAT NOT NULL,
-                special_note BIT NOT NULL, /* To kana bit gt mas niazei mono an anoikei h den anhkei sto katasthma 0 -> gia kseno 1 gia AB*/
+                special_note BIT(1) NOT NULL, /* To kana bit gt mas niazei mono an anoikei h den anhkei sto katasthma 0 -> gia kseno 1 gia AB*/
                 category CHAR(25) NOT NULL,
                 CONSTRAINT PKvehicle PRIMARY KEY (barcode));
 

@@ -25,9 +25,9 @@ for i in range(len(ab)):
     sqlFormula = """INSERT INTO transact (total_cost,trans_date,trans_time,week_day,payment_method) 
                     VALUES ({},'{}','{}','{}','{}')""".format(total_cost,trans_date,trans_time,week_day,payment_method)
     mycursor.execute(sqlFormula)
+    card_id = np.random.choice(cardAll)
+    store_id = np.random.choice(storeAll)
     for j in range(np.random.choice(range(100))):
-        card_id = np.random.choice(cardAll)
-        store_id = np.random.choice(storeAll)
         barcode = np.random.choice(ab['barcode'])
         quantity = np.random.choice(range(1,6))
         sqlFormula = """INSERT INTO bought (transact_id,card_id,store_id,quantity,barcode)

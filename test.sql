@@ -46,7 +46,7 @@ CREATE TABLE transact(
 
 /* create table Product*/
 CREATE TABLE product(
-				barcode INT NOT NULL,
+				barcode BIGINT NOT NULL,
 				product_name VARCHAR(101) NOT NULL, /* Added name*/
 				producer_name VARCHAR(50) NOT NULL, /* Added producer name*/
                 price FLOAT NOT NULL,

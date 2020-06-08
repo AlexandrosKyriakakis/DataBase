@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Rental Company</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/fonts.css" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script
+      type="text/javascript"
+      src="static/js/modernizr-1.5.min.js"
+    ></script>
+  </head>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="static/js/jquery.js"></script>
+  <script
+    type="text/javascript"
+    src="static/js/jquery.easing-sooper.js"
+  ></script>
+  <script type="text/javascript" src="static/js/jquery.sooperfish.js"></script>
+  <script
+    type="text/javascript"
+    src="static/js/jquery.kwicks-1.5.1.js"
+  ></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#images").kwicks({
+        max: 600,
+        spacing: 2,
+      });
+      $("ul.sf-menu").sooperfish();
+    });
+  </script>
+  <body>
+    <div id="main">
+      <header>
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1>
+              <a href="index.html"
+                >Car<span class="logo_colour"> Rental Company</span></a
+              >
+            </h1>
+            <h2>The house of cars.</h2>
+          </div>
+        </div>
+        <nav>
+          <ul class="sf-menu" id="nav">
+            <li class="selected"><a href="/">Home</a></li>
+            <li><a href="/fleet">Fleet</a></li>
+            <li>
+              <a href="#">Available Cars</a>
+              <ul>
+                <li>
+                  <a href="#">Car</a>
+                  <ul>
+                    <li><a href="/Car_Dodge">Dodge</a></li>
+                    <li><a href="/Car_Honda">Honda</a></li>
+                    <li><a href="/Car_Jeep">Jeep</a></li>
+                    <li><a href="/Car_Toyota">Toyota</a></li>
+                    <li><a href="/Car_Volkswagen">Volkswagen</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Motorcycle</a>
+                  <ul>
+                    <li><a href="/Moto_Honda">Honda</a></li>
+                    <li><a href="/Moto_Yamaha">Yamaha</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">ATV</a>
+                  <ul>
+                    <li><a href="/ATV_Jeep">Jeep</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Minivan</a>
+                  <ul>
+                    <li><a href="/Mini_Dodge">Dodge</a></li>
+                    <li><a href="/Mini_Jeep">Jeep</a></li>
+                    <li><a href="/Mini_Toyota">Toyota</a></li>
+                    <li><a href="/Mini_VW">Volkswagen</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Truck</a>
+                  <ul>
+                    <li><a href="/Truck_Toyota">Toyota</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact_us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="site_content">
+        <div class="content">
+          {%block content %}{% endblock %}
+        </div>
+      </div>
+      <footer>
+        <p>
+          Copyright &copy; Giannis Alexopoulos and Alexandros Kyriakakis and
+          Chris 2020
+        </p>
+      </footer>
+    </div>
+    <p>&nbsp;</p>
+  </body>
+</html>
