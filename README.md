@@ -12,3 +12,7 @@
 # ER-Diagram
  
 ![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/er-diagram.png)
+
+# Relational Diagram
+
+![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/Relational_Model.png)
