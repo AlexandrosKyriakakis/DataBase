@@ -18,10 +18,7 @@
 ## Instalation 
 
 1. At first, initialize a mysql database at either a [localhost](https://dev.mysql.com/doc/mysql-getting-started/en/) or a [server](https://aws.amazon.com/rds/)
-2. 
-```
-	$ mysql -h "server-name" -u "your_username" -p "your_password"
-```
+2. ```shell  mysql -h "server-name" -u "your_username" -p "your_password"```
 
 ## Authors
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
