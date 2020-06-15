@@ -41,6 +41,17 @@
 	- [addProductsPastPricesHas.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addProductsPastPricesHas.py)
 	- [addTransactionsBought.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addTransactionsBought.py)
 	- [server_guest.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/server_guest.py)
+10. Run the following strictly at this order,
+```bash 
+	python3 ./addData/addCustomersAndPhone.py
+	python3 ./addData/addProductsPastPricesHas.py
+	python3 ./addData/addTransactionsBought.py
+```
+11. Now, that the database is full with random generated data, start the back-end server to finish the installation,
+```bash
+	python3 server_guest.py
+```
+12. Open your favorite browser and type ``` localhost:8587/ ``` to preview the website.
 ## Authors
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
