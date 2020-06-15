@@ -1,0 +1,45 @@
+{% extends "layout.html" %} {% block content %}
+<script src="/static/js/editStores.js"></script>
+<form class="form-inline" action="/action_page.php">
+  <label for="store">Action:</label>
+  <select
+    type="text"
+    name="Action"
+    placeholder="Add/Update/Remove"
+    value=""
+    id="edit"
+  >
+    <option value="1" selected>Add</option>
+    <option value="0">Update</option>
+    <option value="-1">Remove</option>
+  </select>
+
+  <label for="store">Store ID*:</label>
+  <input type="text" id="store" />
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" />
+
+  <label for="city">City:</label>
+  <input type="text" id="city" />
+
+  <label for="Address">Address*:</label>
+  <input type="text" id="address" />
+
+  <label for="postal_code">Postal Code:</label>
+  <input type="text" id="postal_code" />
+
+  <label for="opening_time">Opening Time:</label>
+  <input type="text" id="opening_time" />
+
+  <label for="closing_time">Closing Time:</label>
+  <input type="text" id="closing_time" />
+
+  <label for="square_meters">Square Meters:</label>
+  <input type="text" id="square_meters" />
+  <label for="button">Activation Button:</label>
+  <button onclick="myFunction()">Save Changes</button>
+</form>
+<div id="demo"></div>
+
+{% endblock %}

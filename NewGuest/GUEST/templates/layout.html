@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serious Company</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/fonts.css" />
+    <link
+      rel="icon"
+      href="https://w0.pngwave.com/png/926/934/cycling-bicycle-mountain-biking-mountain-bike-computer-icons-bicycles-png-clip-art-thumbnail.png"
+    />
+    <!-- modernizr enables HTML5 elements and feature detects -->
+    <script
+      type="text/javascript"
+      src="static/js/modernizr-1.5.min.js"
+    ></script>
+  </head>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="static/js/jquery.js"></script>
+  <script
+    type="text/javascript"
+    src="static/js/jquery.easing-sooper.js"
+  ></script>
+  <script type="text/javascript" src="static/js/jquery.sooperfish.js"></script>
+  <script
+    type="text/javascript"
+    src="static/js/jquery.kwicks-1.5.1.js"
+  ></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#images").kwicks({
+        max: 600,
+        spacing: 2,
+      });
+      $("ul.sf-menu").sooperfish();
+    });
+  </script>
+  <body>
+    <div id="main">
+      <header>
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1>
+              <a href="/"
+                >Serious<span class="logo_colour"> Company co</span></a
+              >
+            </h1>
+            <h2>The house of real data</h2>
+          </div>
+        </div>
+        <nav>
+          <ul class="sf-menu" id="nav">
+            <li class="selected"><a href="/">Home</a></li>
+            <li><a href="/search">Search per Condition</a></li>
+            <li>
+              <a href="#">Customer Data</a>
+
+              <ul>
+                <li><a href="/customers_visit_data">Sheet</a></li>
+                <li><a href="/customers">Chart</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Product Data</a>
+
+              <ul>
+                <li>
+                  <a href="/product_bought_together">Top bought together</a>
+                </li>
+                <li><a href="/popular_positions">Top popular positions</a></li>
+                <li><a href="/label_trust">Trust in Label</a></li>
+                <li>
+                  <a href="/hours_spent_more">Total amount spent per hour</a>
+                </li>
+                <li>
+                  <a href="/age_percentage"
+                    >Percentage of transactions per age group</a
+                  >
+                </li>
+
+                <li><a href="/query_1">Personal Query #1</a></li>
+                <li><a href="/query_2">Personal Query #2</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">Views</a>
+
+              <ul>
+                <li>
+                  <a href="/sales_category_store"
+                    >Sales per category per store</a
+                  >
+                </li>
+                <li><a href="/customer_info">Customer Infoex</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Edit Data</a>
+
+              <ul>
+                <li><a href="/editStores">Stores</a></li>
+                <li><a href="/editCustomers">Customers</a></li>
+                <li><a href="/editProducts">Products</a></li>
+                <li><a href="/past_prices">View past prices</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/jonny.alexo"
+                    >Giannis Alexopoulos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/alexandre.kyriakakis/"
+                    >Alexandros Kyriakakis</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/christos.rs.1"
+                    >Chris</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div id="site_content">
+        <div class="content">
+          <img
+            src="https://www.nassm.com/sites/default/files/randomslide/1_0.jpg"
+          />
+          {%block content %}{% endblock %}
+        </div>
+      </div>
+      <footer>
+        <p>
+          Copyright &copy; Giannis Alexopoulos, Alexandros Kyriakakis and Chris
+          2020
+        </p>
+      </footer>
+    </div>
+    <p>&nbsp;</p>
+  </body>
+</html>

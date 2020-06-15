@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Most popular locations</h1>
+<div style="height: 500px; overflow: auto;">
+  <table>
+    <tr>
+      <th>Store ID</th>
+      <th>Shelf</th>
+      <th>Aisle</th>
+      <th>Number of items bought</th>
+    </tr>
+    {% for result in results %}
+    <tr>
+      <td>{{result[0]}}</td>
+      <td>{{result[1]}}</td>
+      <td>{{result[2]}}</td>
+      <td>{{result[3]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

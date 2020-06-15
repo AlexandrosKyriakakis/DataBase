@@ -1,0 +1,64 @@
+{% block content %}
+<h1>Stores Visited</h1>
+<table>
+  <tr>
+    <th>Card ID</th>
+    <th>STORE ID</th>
+  </tr>
+  {% for result in results %}
+  <tr>
+    <td>{{result[0]}}</td>
+    <td>{{result[1]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h1>Most Popular Items Bought</h1>
+<table>
+  <tr>
+    <th>Card ID</th>
+    <th>BARCODE</th>
+    <th>AMOUNT</th>
+  </tr>
+  {% for result3 in results3 %}
+  <tr>
+    <td>{{result3[0]}}</td>
+    <td>{{result3[1]}}</td>
+    <td>{{result3[2]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h1>Average total amount spent per month</h1>
+<table>
+  <tr>
+    <th>Card ID</th>
+    <th>Month</th>
+    <th>Average total amount</th>
+  </tr>
+  {% for result4 in results4 %}
+  <tr>
+    <td>{{result4[0]}}</td>
+    <td>{{result4[1]}}</td>
+    <td>{{result4[2]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<h1>Average total amount spent per week</h1>
+<div style="height:500px;overflow:auto;">
+<table>
+  <tr>
+    <th>Card ID</th>
+    <th>Week</th>
+    <th>Average total amount</th>
+  </tr>
+  {% for result5 in results5 %}
+  <tr>
+    <td>{{result5[0]}}</td>
+    <td>{{result5[1]}}</td>
+    <td>{{result5[2]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

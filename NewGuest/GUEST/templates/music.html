@@ -1,0 +1,33 @@
+{% block content %}
+<h1>Additive Transaction Data</h1>
+<p>... since 1950</p>
+<div style="height: 500px; overflow: auto;">
+  <table id="id01" style="table-layout: fixed;">
+    <tr>
+      <th>Transaction ID</th>
+      <th>Total Cost</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Week Day</th>
+      <th>Payment Method</th>
+      <th>Card ID</th>
+      <th>Barcode</th>
+      <th>Quantity</th>
+    </tr>
+    {% for album in albums %}
+    <tr>
+      <td>{{album[0]}}</td>
+      <td>{{album[1]}}</td>
+      <td>{{album[2]}}</td>
+      <td>{{album[3]}}</td>
+      <td>{{album[4]}}</td>
+      <td>{{album[5]}}</td>
+      <td>{{album[6]}}</td>
+      <td>{{album[7]}}</td>
+      <td>{{album[8]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}
