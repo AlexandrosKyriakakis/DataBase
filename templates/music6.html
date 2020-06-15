@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Total amount spent per hour</h1>
+<table>
+  <tr>
+    <th>Hour</th>
+    <th>Amount spent</th>
+  </tr>
+  {% for result in results %}
+  <tr>
+    <td>{{result[0]}}</td>
+    <td>{{result[1]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Most popular path in each store</h1>
+<table>
+  <tr>
+    <th>Product #1</th>
+    <th>Shelf of product #1</th>
+    <th>Aisle of product #1</th>
+    <th>Product #2</th>
+    <th>Shelf of product #2</th>
+    <th>Aisle of product #2</th>
+    <th>Times passed this path</th>
+    <th>Store ID</th>
+  </tr>
+  {% for result in results %}
+  <tr>
+    <td>{{result[0]}}</td>
+    <td>{{result[1]}}</td>
+    <td>{{result[2]}}</td>
+    <td>{{result[3]}}</td>
+    <td>{{result[4]}}</td>
+    <td>{{result[5]}}</td>
+    <td>{{result[6]}}</td>
+    <td>{{result[7]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

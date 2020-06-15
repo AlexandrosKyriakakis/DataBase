@@ -1,0 +1,73 @@
+{% extends "layout.html" %} {% block content %}
+<script src="/static/js/editCustomers.js"></script>
+<form class="form-inline" action="/action_page.php">
+  <label for="edit">Action:</label>
+  <select
+    type="text"
+    name="Action"
+    placeholder="Add/Update/Remove"
+    value=""
+    id="edit"
+  >
+    <option value="1" selected>Add</option>
+    <option value="0">Update</option>
+    <option value="-1">Remove</option>
+  </select>
+
+  <label for="card_id">Card ID*:</label>
+  <input type="text" id="card_id" />
+
+  <label for="first_name">First Name*:</label>
+  <input type="text" id="first_name" />
+
+  <label for="last_name">Last Name*:</label>
+  <input type="text" id="last_name" />
+
+  <label for="total_points">Total Points:</label>
+  <input type="text" id="total_points" />
+
+  <label for="rewards">Rewards:</label>
+  <input type="text" id="rewards" />
+
+  <label for="birth_date">Birthdate:</label>
+  <input type="text" id="birth_date" />
+
+  <label for="marital_status">Marital Status:</label>
+  <select
+    type="text"
+    name="marital_status"
+    placeholder="Married/Single/Divorced/Engaged/Widow/Widower"
+    value=""
+    id="marital_status"
+  >
+    <option value="" selected>-</option>
+    <option value="Married">Married</option>
+    <option value="Single">Single</option>
+    <option value="Divorced">Divorced</option>
+    <option value="Engaged">Engaged</option>
+    <option value="Widow">Widow</option>
+    <option value="Widower">Widower</option>
+  </select>
+
+  <label for="social_security_number">SSN*:</label>
+  <input type="text" id="social_security_number" />
+
+  <label for="phone_number">Phone Numbers (separated with comma ','):</label>
+  <input type="text" id="phone_number" />
+  <select
+    type="text"
+    name="ActioNumber"
+    placeholder="Add/Update/Remove"
+    value=""
+    id="editNumber"
+  >
+    <option value="1" selected>Add</option>
+    <option value="-1">Remove</option>
+  </select>
+
+  <label for="button">Activation Button:</label>
+  <button onclick="myFunction()">Save Changes</button>
+</form>
+<div id="demo"></div>
+
+{% endblock %}
