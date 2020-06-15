@@ -27,7 +27,7 @@
 3. [AlexJohnChris.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/AlexJohnChris.sql) to create the database.
 4. [indexes.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/indexes.sql) to create the indexes.
 5. [view1.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view1.sql) and [view2.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view2.sql) to create the views.
-6. [past_price_trigger.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/past_price_trigger.sql) to create the triger for auto-update past prices.
+6. [past_price_trigger.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/past_price_trigger.sql) to create the trigger for auto-update past prices.
 7. [addStores.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/addStores.sql) to add all the stores.
 
 

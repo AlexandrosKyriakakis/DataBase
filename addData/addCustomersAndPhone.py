@@ -1,12 +1,12 @@
 import mysql.connector
 import pandas as pd
 import numpy as np
-People = pd.read_csv("./GitWithMyLove/data/RandomPeople.csv")
+People = pd.read_csv("./MarketDataset/data/RandomPeople.csv")
 mydb = mysql.connector.connect(
-    host = "db-ece-ntua.cqkzf2d0epmt.us-east-2.rds.amazonaws.com",
-    user = "Alexandros",
-    passwd = "el17001el12163",
-    database = "Alex"
+    host = "****",
+    user = "****",
+    passwd = "****",
+    database = "AlexJohnChris"
 )
 
 mycursor = mydb.cursor()
