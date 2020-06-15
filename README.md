@@ -51,7 +51,7 @@
 ```bash
 	python3 server_guest.py
 ```
-12. Open your favorite browser and type ``` localhost:8587/ ``` to preview the website.
+12. Open your favorite browser at [localhost:8587/](localhost:8587/) to preview the website.
 ## Authors
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
