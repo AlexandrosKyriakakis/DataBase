@@ -36,7 +36,7 @@
 	cd DataBase
 	git clone https://github.com/AlexandrosKyriakakis/MarketDataset.git 
 ```
-9. Add your database credentials at the top each of the following files,
+9. Add your database credentials at the top '\*\*\*\*' of each of the following files,
 	- [addCustomersAndPhone.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addCustomersAndPhone.py)
 	- [addProductsPastPricesHas.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addProductsPastPricesHas.py)
 	- [addTransactionsBought.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addTransactionsBought.py)
