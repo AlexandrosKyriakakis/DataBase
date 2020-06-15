@@ -19,7 +19,7 @@
 ## Instalation 
 
 1. At first, initialize a mysql database at either a [localhost](https://dev.mysql.com/doc/mysql-getting-started/en/) or a [server](https://aws.amazon.com/rds/)
-2. Then, run the folowing command in the terminal in order to connect in mysql host:
+2. Then, run the folowing command in terminal, using your credentials in order to connect in mysql host:
 ```bash
 	  mysql -h "server-name" -u "your_username" -p "your_password"
 ```
@@ -30,8 +30,17 @@
 6. [past_price_trigger.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/past_price_trigger.sql) to create the trigger for auto-update past prices.
 7. [addStores.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/addStores.sql) to add all the stores.
 ### Back in the terminal
-8. Run ``` git clone https://github.com/AlexandrosKyriakakis/MarketDataset.git  ```
-
+8. Run,
+```bash 
+	git clone https://github.com/AlexandrosKyriakakis/DataBase.git 
+	cd DataBase
+	git clone https://github.com/AlexandrosKyriakakis/MarketDataset.git 
+```
+9. Add your database credentials at the top each of the following files,
+	- [addCustomersAndPhone.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addCustomersAndPhone.py)
+	- [addProductsPastPricesHas.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addProductsPastPricesHas.py)
+	- [addTransactionsBought.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addTransactionsBought.py)
+	- [server_guest.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/server_guest.py)
 ## Authors
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
