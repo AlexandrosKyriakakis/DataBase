@@ -85,7 +85,7 @@ Here we show all the queries used in the site at each page,
 - At [/search](http://localhost:8587/search) we used [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition)
 - At [/customers_visit_data](http://localhost:8587/customers_visit_data) and [/customers](http://localhost:8587/customers) we used [CustomerData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/CustomerData)
 - At [Product Data](http://localhost:8587) we used [ProductData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/ProductData)
-- At [/customer_info](http://localhost:8587/customer_info) and [/sales_category_store](http://localhost:8587/sales_category_store) we used [Views](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/Views)
+- At [/customer_info](http://localhost:8587/customer_info) and [/sales_category_store](http://localhost:8587/sales_category_store) we used [Views](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/views)
 - At
 
 ## Authors
