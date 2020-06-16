@@ -14,7 +14,7 @@
  ![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/er-diagram.png)
 
 ## Relational Model
-![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/Relational_Model.png)
+![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/relationalModel.png)
 
 ## Instalation 
 
