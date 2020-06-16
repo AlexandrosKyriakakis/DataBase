@@ -51,9 +51,7 @@ ORDER BY percentage DESC;
 
 ## Total amount spent per hour
 
-ql
-SELECT
-   HOUR(trans_time),
+ns_time),
    CAST(SUM(A.total_cost) AS DECIMAL (20 , 2 ))
 FROM
    transact A,
