@@ -858,7 +858,9 @@ def search_result():
         else ""
     )
     transdate = (
-        " and transact.trans_date = '{}'".format(my_data.get("birthday"))
+        " and month(transact.trans_date) = month('{0}') and year(transact.trans_date) = year('{0}')".format(
+            my_data.get("birthday")
+        )
         if (my_data.get("birthday") != "")
         else ""
     )
@@ -903,6 +905,7 @@ def search_result():
         + category
         + " limit 1000"
     )
+    print(my_query)
     cur.execute(my_query)
     results = cur.fetchall()
     return render_template("music.html", albums=results)
