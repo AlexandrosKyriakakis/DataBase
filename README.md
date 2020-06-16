@@ -80,6 +80,13 @@
 
 ## Sql Queries
 
+Queries to construct database,
+
+- [AlexJohnChris](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql)
+- [Indexes](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/Indexes)
+- [Trigers](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/trigers)
+- [Add Stores](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/addStores)
+
 Here we show all the [queries](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql) used in the site at each page,
 
 - At [/search](http://localhost:8587/search) we used [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition)
