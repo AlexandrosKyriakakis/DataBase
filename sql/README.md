@@ -2,7 +2,7 @@
 
 Create the database using the following sql code.
 
-##
+## Initialize Database
 
 ```sql
 CREATE DATABASE `AlexJohnChris`;
@@ -10,6 +10,11 @@ ALTER DATABASE AlexJohnChris CHARACTER
 SET utf8
 COLLATE utf8_bin;
 USE `AlexJohnChris`;
+```
+
+## Create table for Stores' data
+
+```sql
 /* create table Store*/
 CREATE TABLE store
 (
@@ -26,9 +31,13 @@ CREATE TABLE store
 				square_meters INT,
 				CONSTRAINT PKstore PRIMARY KEY
 	(store_id));
+```
 
+## Create table for Customers data
+
+```sql
 	/* create table Customer*/
-	CREATE TABLE customer
+CREATE TABLE customer
 	(
 		card_id INT NOT NULL
 		AUTO_INCREMENT,
@@ -46,18 +55,26 @@ CREATE TABLE store
 		(15),
 				CONSTRAINT PKcustomer PRIMARY KEY
 		(card_id));
+```
 
-		/*customer_phone multivalued attribute of customer*/
-		CREATE TABLE customer_phone
+### Create table for Customers' multiple phone numbers
+
+```sql
+	/*customer_phone multivalued attribute of customer*/
+CREATE TABLE customer_phone
 		(
 			card_id INT NOT NULL,
 			phone_number BIGINT NOT NULL,
 			CONSTRAINT PKcustomer_phone PRIMARY KEY(card_id, phone_number),
 			CONSTRAINT FKcustomer_phone FOREIGN KEY (card_id) REFERENCES customer(card_id) ON UPDATE CASCADE ON DELETE CASCADE
 		);
+```
 
-		/* create table Transaction*/
-		CREATE TABLE transact
+### Create table for Transaction data
+
+```sql
+	/* create table Transaction*/
+CREATE TABLE transact
 		(
 			transact_id BIGINT NOT NULL
 			AUTO_INCREMENT,
@@ -70,9 +87,13 @@ CREATE TABLE store
 			(15) NOT NULL,
 				CONSTRAINT PKtransact PRIMARY KEY
 			(transact_id));
+```
 
-			/* create table Product*/
-			CREATE TABLE product
+### Create table for Product data
+
+```sql
+	/* create table Product*/
+CREATE TABLE product
 			(
 				barcode BIGINT NOT NULL,
 				product_name VARCHAR(101) NOT NULL,
@@ -85,9 +106,13 @@ CREATE TABLE store
 				category CHAR(25) NOT NULL,
 				CONSTRAINT PKvehicle PRIMARY KEY (barcode)
 			);
+```
 
-			/* works : 1-n relationship (optional,optional)*/
-			CREATE TABLE has
+### Create Table has
+
+```sql
+   /* works : 1-n relationship (optional,optional)*/
+CREATE TABLE has
 			(
 				store_id TINYINT NOT NULL,
 				barcode BIGINT NOT NULL,
@@ -97,9 +122,13 @@ CREATE TABLE store
 				CONSTRAINT FK1store FOREIGN KEY (store_id) REFERENCES store(store_id) ON UPDATE CASCADE ON DELETE CASCADE,
 				CONSTRAINT FK2has_products FOREIGN KEY (barcode) REFERENCES product(barcode) ON UPDATE CASCADE ON DELETE CASCADE
 			);
+```
 
-			/*  past_prices 1-n relationship(optional,mandatory)*/
-			CREATE TABLE past_prices
+### Create table Past Prices
+
+```sql
+	/*  past_prices 1-n relationship(optional,mandatory)*/
+CREATE TABLE past_prices
 			(
 				barcode BIGINT NOT NULL,
 				past_price FLOAT NOT NULL,
@@ -108,10 +137,14 @@ CREATE TABLE store
 				CONSTRAINT FKhad_price FOREIGN KEY (barcode) REFERENCES product(barcode) ON UPDATE CASCADE ON DELETE CASCADE
 			);
 
+```
 
+### Create table Bought
+
+```sql
 			/*  rents: n-m-k-l relationship(optional,optional,optional,mandatory)   the transaction part is mandatory*/
-			/* payment transactions*/
-			CREATE TABLE bought
+	/* payment transactions*/
+CREATE TABLE bought
 			(
 				transact_id BIGINT NOT NULL,
 				card_id INT NOT NULL,
