@@ -80,9 +80,9 @@
 
 ## Sql Queries
 
-Here we show all the queries used in the site,
+Here we show all the queries used in the site at each page,
 
-- At page </search>
+- [/search](http://localhost:8587/search)
 -
 
 ## Authors
