@@ -1,0 +1,1 @@
+DELETE FROM store WHERE store_id = 11
