@@ -80,7 +80,7 @@
 
 ## Sql Queries
 
-Here we show all the queries used in the site at each page,
+Here we show all the [queries](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql) used in the site at each page,
 
 - At [/search](http://localhost:8587/search) we used [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition)
 - At [/customers_visit_data](http://localhost:8587/customers_visit_data) and [/customers](http://localhost:8587/customers) we used [CustomerData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/CustomerData)
