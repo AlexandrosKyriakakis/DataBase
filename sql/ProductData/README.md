@@ -48,11 +48,10 @@ WHERE
    AND A.special_note = 1
 GROUP BY A.special_note , A.category
 ORDER BY percentage DESC;
-```
 
 ## Total amount spent per hour
 
-```sql
+ql
 SELECT
    HOUR(trans_time),
    CAST(SUM(A.total_cost) AS DECIMAL (20 , 2 ))
