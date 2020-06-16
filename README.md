@@ -29,7 +29,7 @@
 1. At first, initialize a mysql database at either a [localhost](https://dev.mysql.com/doc/mysql-getting-started/en/) or a [server](https://aws.amazon.com/rds/)
 2. Then, run the folowing command in terminal, using your credentials in order to connect in mysql host:
 ```bash
-	  mysql -h "server-name" -u "your_username" -p "your_password"
+	 $ mysql -h "server-name" -u "your_username" -p "your_password"
 ```
 ### Run the following inside mysql command prompt
 3. [AlexJohnChris.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/AlexJohnChris.sql) to create the database.
@@ -40,9 +40,9 @@
 ### Back in the terminal
 8. Run,
 ```bash 
-	git clone https://github.com/AlexandrosKyriakakis/DataBase.git 
-	cd DataBase
-	git clone https://github.com/AlexandrosKyriakakis/MarketDataset.git 
+	$ git clone https://github.com/AlexandrosKyriakakis/DataBase.git 
+	$ cd DataBase
+	$ git clone https://github.com/AlexandrosKyriakakis/MarketDataset.git 
 ```
 9. Add your database credentials at the top '\*\*\*\*' of each of the following files,
 	- [addCustomersAndPhone.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/addData/addCustomersAndPhone.py)
@@ -51,14 +51,14 @@
 	- [server_guest.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/server_guest.py)
 10. Run the following strictly at this order,
 ```bash 
-	pip3 install -r requirements.txt
-	python3 ./addData/addCustomersAndPhone.py
-	python3 ./addData/addProductsPastPricesHas.py
-	python3 ./addData/addTransactionsBought.py
+	$ pip3 install -r requirements.txt
+	$ python3 ./addData/addCustomersAndPhone.py
+	$ python3 ./addData/addProductsPastPricesHas.py
+	$ python3 ./addData/addTransactionsBought.py
 ```
 11. Now, that the database is full with random generated data, start the back-end server to finish the installation,
 ```bash
-	python3 server_guest.py
+	$ python3 server_guest.py
 ```
 12. Open your favorite browser and type <http://localhost:8587/> to preview the website.
 
