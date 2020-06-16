@@ -31,7 +31,7 @@
 ```bash
 	 $ mysql -h "server-name" -u "your_username" -p "your_password"
 ```
-### Run the following inside mysql command prompt
+### Run the following inside mysql command prompt, strictly at this order,
 3. [AlexJohnChris.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/AlexJohnChris.sql) to create the database.
 4. [indexes.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/indexes.sql) to create the indexes.
 5. [view1.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view1.sql) and [view2.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view2.sql) to create the views.
