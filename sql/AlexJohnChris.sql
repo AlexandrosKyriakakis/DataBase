@@ -12,7 +12,7 @@ CREATE TABLE store
 				city CHAR
 	(100),
 				store_address VARCHAR
-	(100) NOT NULL ,
+	(100) NOT NULL,
 				postal_code INT,
                 opening_time TIME,
 				closing_time TIME,
@@ -21,24 +21,23 @@ CREATE TABLE store
 	(store_id));
 
 	/* create table Customer*/
-	/* THA XRHSIMOPOIHSOUME SUMBASH 0 _ _ _ _ => customer eswterikou, 1 _ _ _ _ => customer ekswterikou, 3 _ _ _ _ => customer etairia*/
 	CREATE TABLE customer
 	(
 		card_id INT NOT NULL
 		AUTO_INCREMENT,  
-				first_name VARCHAR
+			first_name VARCHAR
 		(100) NOT NULL,
-				last_name VARCHAR
+			last_name VARCHAR
 		(100) NOT NULL,
-				total_points BIGINT DEFAULT 0,
-                rewards BIGINT DEFAULT 0,
-				birth_date DATE,
-				marital_status CHAR
+			total_points BIGINT DEFAULT 0,
+					rewards BIGINT DEFAULT 0,
+			birth_date DATE,
+			marital_status CHAR
 		(15), 
-				social_security_number BIGINT NOT NULL,
-				sex CHAR
+			social_security_number BIGINT NOT NULL,
+			sex CHAR
 		(15),
-				CONSTRAINT PKcustomer PRIMARY KEY
+			CONSTRAINT PKcustomer PRIMARY KEY
 		(card_id));
 
 		/*customer_phone multivalued attribute of customer*/
@@ -55,14 +54,14 @@ CREATE TABLE store
 		(
 			transact_id BIGINT NOT NULL
 			AUTO_INCREMENT,
-                total_cost FLOAT NOT NULL,
-                trans_date DATE NOT NULL,
-                trans_time TIME NOT NULL,
-                week_day CHAR
+				total_cost FLOAT NOT NULL,
+				trans_date DATE NOT NULL,
+				trans_time TIME NOT NULL,
+				week_day CHAR
 			(15),
-                payment_method CHAR
+				payment_method CHAR
 			(15) NOT NULL,
-				CONSTRAINT PKtransact PRIMARY KEY
+		CONSTRAINT PKtransact PRIMARY KEY
 			(transact_id));
 
 			/* create table Product*/
@@ -77,7 +76,7 @@ CREATE TABLE store
 				special_note BIT(1) NOT NULL,
 				/* To kana bit gt mas niazei mono an anoikei h den anhkei sto katasthma 0 -> gia kseno 1 gia AB*/
 				category CHAR(25) NOT NULL,
-				CONSTRAINT PKvehicle PRIMARY KEY (barcode)
+				CONSTRAINT PKvehicle PRIMARY KEY(barcode)
 			);
 
 			/* works : 1-n relationship (optional,optional)*/
@@ -118,4 +117,4 @@ CREATE TABLE store
 				CONSTRAINT FK3transact FOREIGN KEY (transact_id) REFERENCES transact(transact_id) ON UPDATE CASCADE ON DELETE CASCADE,
 				CONSTRAINT FK4store FOREIGN KEY (store_id) REFERENCES store(store_id) ON UPDATE CASCADE ON DELETE CASCADE
 			);
-                
+			

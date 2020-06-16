@@ -51,21 +51,7 @@ ORDER BY percentage DESC;
 
 ## Total amount spent per hour
 
-ns_time),
-   CAST(SUM(A.total_cost) AS DECIMAL (20 , 2 ))
-FROM
-   transact A,
-   bought B
-WHERE
-   A.transact_id = B.transact_id
-GROUP BY HOUR(trans_time)
-ORDER BY SUM(A.total_cost) DESC , HOUR(trans_time)
-```
-
-## Percentage of transactions per age group per hour
-
-```sql
-SELECT distinct
+ distinct
    cast(SUM(IF(A.age < 20, 1, 0))/totals.total _ 100 as decimal(20,2)) AS 'Under 20',
    cast(SUM(IF(A.age BETWEEN 20 AND 29, 1, 0))/totals.total _ 100 as decimal(20,2)) AS '20 - 29',
    cast(SUM(IF(A.age BETWEEN 30 AND 39, 1, 0))/totals.total _ 100 as decimal(20,2)) AS '30 - 39',
