@@ -73,7 +73,7 @@ CREATE TABLE customer_phone
 ### Create table for Transaction data
 
 ```sql
-	/* create table Transaction*/
+	/* create table Transaction */
 CREATE TABLE transact
 		(
 			transact_id BIGINT NOT NULL
