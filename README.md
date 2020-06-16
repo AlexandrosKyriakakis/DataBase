@@ -43,7 +43,7 @@
 	- [server_guest.py](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/server_guest.py)
 10. Run the following strictly at this order,
 ```bash 
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 	python3 ./addData/addCustomersAndPhone.py
 	python3 ./addData/addProductsPastPricesHas.py
 	python3 ./addData/addTransactionsBought.py
