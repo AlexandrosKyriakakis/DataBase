@@ -53,6 +53,11 @@
 	python3 server_guest.py
 ```
 12. Open your favorite browser and type <http://localhost:8587/> to preview the website.
+
+## TODO
+- Explain Queries used at each page.
+- ...
+
 ## Authors
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
