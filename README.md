@@ -41,10 +41,10 @@
 ### Run the following inside mysql command prompt, strictly at this order,
 
 3. [AlexJohnChris.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/AlexJohnChris.sql) to create the database.
-4. [indexes.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/indexes.sql) to create the indexes.
-5. [view1.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view1.sql) and [view2.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/view2.sql) to create the views.
-6. [past_price_trigger.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/past_price_trigger.sql) to create the trigger for auto-update past prices.
-7. [addStores.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/addStores.sql) to add all the stores.
+4. [indexes.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/Indexes/indexes.sql) to create the indexes.
+5. [view1.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/views/view1.sql) and [view2.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/views/view2.sql) to create the views.
+6. [past_price_trigger.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/trigers/past_price_trigger.sql) to create the trigger for auto-update past prices.
+7. [addStores.sql](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/sql/addStores/addStores.sql) to add all the stores.
 
 ### Back in the terminal
 
@@ -82,8 +82,11 @@
 
 Here we show all the queries used in the site at each page,
 
-- [/search](http://localhost:8587/search)
--
+- At [/search](http://localhost:8587/search) we used [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition)
+- At [/customers_visit_data](http://localhost:8587/customers_visit_data) and [/customers](http://localhost:8587/customers) we used [CustomerData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/CustomerData)
+- At [Product Data](http://localhost:8587) we used [ProductData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/ProductData)
+- At [/customer_info](http://localhost:8587/customer_info) and [/sales_category_store](http://localhost:8587/sales_category_store) we used [Views](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/Views)
+- At
 
 ## Authors
 
