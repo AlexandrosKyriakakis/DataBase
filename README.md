@@ -6,7 +6,6 @@
 [![GitHub Issues](https://img.shields.io/badge/numpy-v1.17.4-green.svg)](https://img.shields.io/badge/pandas-v0.25.3-yellow.svg)
 ![mysql_connector](https://img.shields.io/badge/mysql_connector-v2.2.9-blue.svg)
 [![pandas](https://img.shields.io/badge/pandas-v0.25.3-yellow.svg)](https://opensource.org/licenses/MIT)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
