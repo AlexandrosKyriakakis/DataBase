@@ -82,7 +82,7 @@
 
 Here we show all the queries used in the site,
 
-- At page [/search]
+- At page </search>
 -
 
 ## Authors
