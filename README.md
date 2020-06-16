@@ -78,10 +78,12 @@
 
 12. Open your favorite browser and type <http://localhost:8587/> to preview the website.
 
-## TODO
+## Sql Queries
 
-- Explain Queries used at each page.
-- ...
+Here we show all the queries used in the site,
+
+- At page [/search]
+-
 
 ## Authors
 
