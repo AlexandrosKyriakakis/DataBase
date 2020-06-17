@@ -23,11 +23,11 @@
 
 ## ER-Diagram
 
-![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/er-diagram.png)
+![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/er-diagram.png?raw=true)
 
 ## Relational Model
 
-![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/relationalModel.png)
+![](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/img/relationalModel.png?raw=true)
 
 ## Installation
 
