@@ -15,7 +15,7 @@
 
 ## [Requirements](https://github.com/AlexandrosKyriakakis/DataBase/blob/master/requirements.txt)
 
-- mysql
+- mysql 8.0.19
 - flask 1.1.2
 - mysql_connector 2.2.9
 - numpy 1.17.4
