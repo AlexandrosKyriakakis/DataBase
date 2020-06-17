@@ -89,11 +89,11 @@ Queries to construct database,
 
 Here we show all the [queries](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql) used in the site at each page,
 
-- [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition) for page [/search](http://localhost:8587/search)
-- [CustomerData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/CustomerData) for pages [/customers_visit_data](http://localhost:8587/customers_visit_data) and [/customers](http://localhost:8587/customers)
-- [ProductData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/ProductData) for pages at [Product Data](http://localhost:8587)
-- [Views](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/views) for pages [/customer_info](http://localhost:8587/customer_info) and [/sales_category_store](http://localhost:8587/sales_category_store)
-- [EditData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/EditData) for pages at [Edit Data](http://localhost:8587)
+- [SearchPerCondition](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/SearchPerCondition) for page [/search](https://damp-thicket-93938.herokuapp.com/search)
+- [CustomerData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/CustomerData) for pages [/customers_visit_data](https://damp-thicket-93938.herokuapp.com/customers_visit_data) and [/customers](https://damp-thicket-93938.herokuapp.com/customers)
+- [ProductData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/ProductData) for pages at [Product Data](https://damp-thicket-93938.herokuapp.com)
+- [Views](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/views) for pages [/customer_info](https://damp-thicket-93938.herokuapp.com/customer_info) and [/sales_category_store](https://damp-thicket-93938.herokuapp.com/sales_category_store)
+- [EditData](https://github.com/AlexandrosKyriakakis/DataBase/tree/master/sql/EditData) for pages at [Edit Data](https://damp-thicket-93938.herokuapp.com)
 
 ## Authors
 

@@ -48,9 +48,11 @@ WHERE
    AND A.special_note = 1
 GROUP BY A.special_note , A.category
 ORDER BY percentage DESC;
+```
 
-## Total amount spent per hour
+## Total amount spent per hour per age
 
+```sql
  distinct
    cast(SUM(IF(A.age < 20, 1, 0))/totals.total _ 100 as decimal(20,2)) AS 'Under 20',
    cast(SUM(IF(A.age BETWEEN 20 AND 29, 1, 0))/totals.total _ 100 as decimal(20,2)) AS '20 - 29',
