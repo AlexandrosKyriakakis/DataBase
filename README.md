@@ -100,7 +100,7 @@ Here we show all the [queries](https://github.com/AlexandrosKyriakakis/DataBase/
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
 ## YouTube
-Explaining how to use our Site in Greek language
+Explaining in Greek language how to use our Site.\\
 <https://www.youtube.com/watch?v=YaeIKbiKvYA&feature=youtu.be>
 
 ## Licence
