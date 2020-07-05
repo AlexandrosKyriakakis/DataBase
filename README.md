@@ -1,6 +1,6 @@
 # Database Project
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
 ![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
 [![Build Status](https://img.shields.io/badge/mysql-v8.0.19+-red.svg)](https://img.shields.io/badge/mysql_connector-v2.2.9-blue.svg)
 ![Dependencies](https://img.shields.io/badge/flask-v1.1.2-blue)
@@ -99,6 +99,9 @@ Here we show all the [queries](https://github.com/AlexandrosKyriakakis/DataBase/
 
 - [Alexandros Kyriakakis](https://github.com/AlexandrosKyriakakis)
 - [Ioannis Alexopoulos](https://github.com/galexo)
+## YouTube
+Explaining how to use our Site in Greek language
+<https://www.youtube.com/watch?v=YaeIKbiKvYA&feature=youtu.be>
 
 ## Licence
 
