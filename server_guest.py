@@ -3,10 +3,10 @@ from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
-app.config["MYSQL_USER"] = "Giannis"
-app.config["MYSQL_PASSWORD"] = "el17001el12163"
-app.config["MYSQL_HOST"] = "db-ece-ntua.cqkzf2d0epmt.us-east-2.rds.amazonaws.com"
-app.config["MYSQL_DB"] = "John"
+app.config["MYSQL_USER"] = "*****"
+app.config["MYSQL_PASSWORD"] = "******"
+app.config["MYSQL_HOST"] = "******"
+app.config["MYSQL_DB"] = "AlexJohnChris"
 mysql = MySQL(app)
 
 
