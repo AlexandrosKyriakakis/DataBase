@@ -1,6 +1,6 @@
 # Database Project
 
-*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+
 ![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
 [![Build Status](https://img.shields.io/badge/mysql-v8.0.19+-red.svg)](https://img.shields.io/badge/mysql_connector-v2.2.9-blue.svg)
 ![Dependencies](https://img.shields.io/badge/flask-v1.1.2-blue)
