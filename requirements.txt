@@ -14,7 +14,7 @@ mysql_connector == 2.2.9
 # GUEST/addData/addCustomersAndPhone.py: 3
 # GUEST/addData/addProductsPastPricesHas.py: 4
 # GUEST/addData/addTransactionsBought.py: 4
-numpy == 1.17.4
+numpy == 1.22.0
 
 # GUEST/addData/addCustomersAndPhone.py: 2
 # GUEST/addData/addProductsPastPricesHas.py: 3
